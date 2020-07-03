@@ -45,7 +45,7 @@
 		   poster-landscape-src="https://assets.kapten-son.com/cdn-cgi/image/gravity=top,fit=cover,height=400,width=800/frontpage/landingpages/anajohnson-2020/ks-ana-johnson-alesund-602x550-block-1.jpg">
 
 	<!-- A story consists of one or more pages. Each page is declared by an `amp-story-page` element. Pages are designed by layering videos, images and text. Here we have a page that uses two layers. One layer filling the available space with an image and one text layer that shows a heading. -->
-	<amp-story-page id="page-1">
+	<amp-story-page id="page-1" auto-advance-after="4s">
 		<amp-story-grid-layer template="fill">
 			<amp-img src="https://assets.kapten-son.com/cdn-cgi/image/gravity=top,fit=cover,height=1280,width=720/frontpage/landingpages/anajohnson-2020/ks-ana-johnson-alesund-602x550-block-1.jpg"
 					 width="720" height="1280"
@@ -61,7 +61,7 @@
 	</amp-story-page>
 
 	<!-- Here we have a page consisting of a video which autoplays and loops. -->
-	<amp-story-page id="page-2">
+	<amp-story-page id="page-2" auto-advance-after="4s">
 		<amp-story-grid-layer template="fill">
 			<amp-video autoplay loop
 					   width="720"
@@ -74,7 +74,7 @@
 	</amp-story-page>
 
 	<!-- Pre-defined entry animations make it possible to create dynamic pages without videos. The length and initial delay can be customized using the `animate-in-duration` and `animate-in-delay` properties. The [animations sample](/documentation/examples/visual-effects/amp_story_animations/) shows all available animantions in action. -->
-	<amp-story-page id="animation-demo">
+	<amp-story-page id="animation-demo" auto-advance-after="4s">
 		<amp-story-grid-layer template="fill">
 			<amp-img src="https://assets.kapten-son.com/cdn-cgi/image/gravity=bottom,fit=cover,height=1280,width=720/frontpage/landingpages/anajohnson-2020/ks-ana-johnson-alesund-602x550-block-2@2x.jpg"
 					 animate-in="fly-in-top"
@@ -92,7 +92,7 @@
 	</amp-story-page>
 
 	<!-- Stories can use predefined layouts to style the page. Here we're using the `thirds` template. For an overview about the available layouts take a look at the [layouts sample](/documentation/examples/style-layout/amp_story_layouts/). -->
-	<amp-story-page id="layout-demo">
+	<amp-story-page id="layout-demo" auto-advance-after="4s">
 		<amp-story-grid-layer template="thirds">
 			<amp-img grid-area="upper-third"
 					 src="https://assets.kapten-son.com/cdn-cgi/image/gravity=center,fit=cover,height=420,width=720/frontpage/landingpages/anajohnson-2020/ks-ana-johnson-alesund-602x550-block-6.jpg"
@@ -115,9 +115,6 @@
 		</amp-story-grid-layer>
 	</amp-story-page>
 
-	<!-- A "bookend" panel containing links to other resources will appear on the last page of your story if you include an `amp-story-bookend` that references a [bookend JSON config](/static/samples/json/bookend.json). -->
-	<amp-story-bookend src="https://amp.dev/static/samples/json/bookend.json" layout="nodisplay">
-	</amp-story-bookend>
 </amp-story>
 </body>
 </html>
